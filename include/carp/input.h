@@ -13,7 +13,7 @@ public:
     Input();
     ~Input();
 
-    void update();
+    void processInput();
     bool getWindowShouldClose();
 
     bool isKeyPressed(CARP_KEY);

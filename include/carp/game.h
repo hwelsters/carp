@@ -27,8 +27,6 @@ private:
 
     Graphics *graphics;
     Input *input;
-
-    std::vector<int> entity_list;
 };
 
 #endif

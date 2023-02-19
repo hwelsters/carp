@@ -10,7 +10,7 @@ Input::Input()
 
 Input::~Input() {}
 
-void Input::update()
+void Input::processInput()
 {
     this->pressed_keys.clear();
     this->released_keys.clear();

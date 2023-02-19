@@ -10,6 +10,8 @@ public:
     Graphics();
     ~Graphics();
 
+    void render();
+
 private:
     SDL_Window *window;
     SDL_Renderer *renderer;

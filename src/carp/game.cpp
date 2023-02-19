@@ -6,24 +6,31 @@ Game::Game()
 {
     this->graphics = new Graphics();
     this->input = new Input();
-    this->update();
+    this->gameLoop();
 }
 
 Game::~Game() {}
 
 void Game::start() {}
 
-void Game::processInput() {}
+void Game::processInput() 
+{
+    this->input->processInput();
+}
 
 void Game::update()
 {
-    while (!this->input->getWindowShouldClose())
-    {
-        this->input->update();
-    }
 }
 
-void Game::render()
+void Game::render() {}
+
+void Game::gameLoop()
 {
-    
+    this->start();
+    while (!this->input->getWindowShouldClose())
+    {
+        this->processInput();
+        this->update();
+        this->render();
+    }
 }
