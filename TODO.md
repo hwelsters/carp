@@ -21,3 +21,6 @@ scenes - have - entities
 entities - have - components
 entities - have - update, processInput, render
 components - have - update, render, they shouldn't take input. Things like sprites, etc
+
+🌕 Moonshot goals:
+Programming language for programming games with carp
