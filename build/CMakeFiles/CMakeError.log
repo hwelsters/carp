@@ -1,0 +1,1325 @@
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c0623/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c0623.dir\build.make CMakeFiles/cmTC_c0623.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0623.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_c0623.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: '__GLIBC__' undeclared (first use in this function)
+   return ((int*)(&__GLIBC__))[argc];
+                   ^~~~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_c0623.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_c0623.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_c0623.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c0623/fast' failed
+mingw32-make.exe: *** [cmTC_c0623/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c4b10/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c4b10.dir\build.make CMakeFiles/cmTC_c4b10.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4b10.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_ALTIVEC_H_HDR  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos" -maltivec -o CMakeFiles\cmTC_c4b10.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+gcc.exe: error: unrecognized command line option '-maltivec'; did you mean '-mxsavec'?
+CMakeFiles\cmTC_c4b10.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_c4b10.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_c4b10.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c4b10/fast' failed
+mingw32-make.exe: *** [cmTC_c4b10/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_28573/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_28573.dir\build.make CMakeFiles/cmTC_28573.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28573.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_ALTIVEC  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos" -maltivec -o CMakeFiles\cmTC_28573.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+gcc.exe: error: unrecognized command line option '-maltivec'; did you mean '-mxsavec'?
+CMakeFiles\cmTC_28573.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_28573.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_28573.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_28573/fast' failed
+mingw32-make.exe: *** [cmTC_28573/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_de18a/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_de18a.dir\build.make CMakeFiles/cmTC_de18a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_de18a.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_de18a.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:23: fatal error: libunwind.h: No such file or directory
+ #include <libunwind.h>
+                       ^
+compilation terminated.
+CMakeFiles\cmTC_de18a.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_de18a.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_de18a.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_de18a/fast' failed
+mingw32-make.exe: *** [cmTC_de18a/fast] Error 2
+
+
+
+Determining if the include file linux/input.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_ef8dc/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ef8dc.dir\build.make CMakeFiles/cmTC_ef8dc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef8dc.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_ef8dc.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:25: fatal error: linux/input.h: No such file or directory
+ #include <linux/input.h>
+                         ^
+compilation terminated.
+CMakeFiles\cmTC_ef8dc.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_ef8dc.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ef8dc.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ef8dc/fast' failed
+mingw32-make.exe: *** [cmTC_ef8dc/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_MPROTECT failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0b4a7/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0b4a7.dir\build.make CMakeFiles/cmTC_0b4a7.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b4a7.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_MPROTECT  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_0b4a7.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c:2:51: fatal error: sys/mman.h: No such file or directory
+                              #include <sys/mman.h>
+                                                   ^
+compilation terminated.
+CMakeFiles\cmTC_0b4a7.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_0b4a7.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_0b4a7.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0b4a7/fast' failed
+mingw32-make.exe: *** [cmTC_0b4a7/fast] Error 2
+
+
+Source file was:
+#include <sys/types.h>
+                             #include <sys/mman.h>
+                             int main(void) { return 0; }
+Determining if the bcopy exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6b43b/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6b43b.dir\build.make CMakeFiles/cmTC_6b43b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b43b.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_6b43b.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'bcopy' undeclared (first use in this function)
+   return ((int*)(&bcopy))[argc];
+                   ^~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_6b43b.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_6b43b.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_6b43b.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6b43b/fast' failed
+mingw32-make.exe: *** [cmTC_6b43b/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef bcopy
+  return ((int*)(&bcopy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcpy exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c920e/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c920e.dir\build.make CMakeFiles/cmTC_c920e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c920e.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_c920e.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'strlcpy' undeclared (first use in this function)
+   return ((int*)(&strlcpy))[argc];
+                   ^~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_c920e.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_c920e.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_c920e.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c920e/fast' failed
+mingw32-make.exe: *** [cmTC_c920e/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_72752/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_72752.dir\build.make CMakeFiles/cmTC_72752.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72752.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_72752.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'strlcat' undeclared (first use in this function)
+   return ((int*)(&strlcat))[argc];
+                   ^~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_72752.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_72752.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_72752.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_72752/fast' failed
+mingw32-make.exe: *** [cmTC_72752/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the index exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d2505/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d2505.dir\build.make CMakeFiles/cmTC_d2505.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2505.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_d2505.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'index' undeclared (first use in this function)
+   return ((int*)(&index))[argc];
+                   ^~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_d2505.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_d2505.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_d2505.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d2505/fast' failed
+mingw32-make.exe: *** [cmTC_d2505/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef index
+  return ((int*)(&index))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the rindex exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_023d8/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_023d8.dir\build.make CMakeFiles/cmTC_023d8.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_023d8.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_023d8.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'rindex' undeclared (first use in this function)
+   return ((int*)(&rindex))[argc];
+                   ^~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_023d8.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_023d8.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_023d8.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_023d8/fast' failed
+mingw32-make.exe: *** [cmTC_023d8/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef rindex
+  return ((int*)(&rindex))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtok_r exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_857a5/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_857a5.dir\build.make CMakeFiles/cmTC_857a5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_857a5.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_857a5.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'strtok_r' undeclared (first use in this function)
+   return ((int*)(&strtok_r))[argc];
+                   ^~~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_857a5.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_857a5.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_857a5.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_857a5/fast' failed
+mingw32-make.exe: *** [cmTC_857a5/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _uitoa exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_7a26c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7a26c.dir\build.make CMakeFiles/cmTC_7a26c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a26c.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_7a26c.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: '_uitoa' undeclared (first use in this function)
+   return ((int*)(&_uitoa))[argc];
+                   ^~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_7a26c.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_7a26c.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_7a26c.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7a26c/fast' failed
+mingw32-make.exe: *** [cmTC_7a26c/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _uitoa
+  return ((int*)(&_uitoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasestr exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_cd576/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cd576.dir\build.make CMakeFiles/cmTC_cd576.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd576.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_cd576.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'strcasestr' undeclared (first use in this function)
+   return ((int*)(&strcasestr))[argc];
+                   ^~~~~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_cd576.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_cd576.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_cd576.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cd576/fast' failed
+mingw32-make.exe: *** [cmTC_cd576/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasestr
+  return ((int*)(&strcasestr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcat exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_fc560/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_fc560.dir\build.make CMakeFiles/cmTC_fc560.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc560.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_fc560.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'wcslcat' undeclared (first use in this function)
+   return ((int*)(&wcslcat))[argc];
+                   ^~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_fc560.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_fc560.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_fc560.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fc560/fast' failed
+mingw32-make.exe: *** [cmTC_fc560/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcat
+  return ((int*)(&wcslcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcpy exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4d999/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4d999.dir\build.make CMakeFiles/cmTC_4d999.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d999.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_4d999.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'wcslcpy' undeclared (first use in this function)
+   return ((int*)(&wcslcpy))[argc];
+                   ^~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_4d999.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_4d999.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_4d999.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4d999/fast' failed
+mingw32-make.exe: *** [cmTC_4d999/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcpy
+  return ((int*)(&wcslcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcscasecmp exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_99f8d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_99f8d.dir\build.make CMakeFiles/cmTC_99f8d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99f8d.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_99f8d.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'wcscasecmp' undeclared (first use in this function)
+   return ((int*)(&wcscasecmp))[argc];
+                   ^~~~~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_99f8d.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_99f8d.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_99f8d.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_99f8d/fast' failed
+mingw32-make.exe: *** [cmTC_99f8d/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcscasecmp
+  return ((int*)(&wcscasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcsncasecmp exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5ba9a/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5ba9a.dir\build.make CMakeFiles/cmTC_5ba9a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ba9a.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_5ba9a.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'wcsncasecmp' undeclared (first use in this function)
+   return ((int*)(&wcsncasecmp))[argc];
+                   ^~~~~~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_5ba9a.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_5ba9a.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_5ba9a.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5ba9a/fast' failed
+mingw32-make.exe: *** [cmTC_5ba9a/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcsncasecmp
+  return ((int*)(&wcsncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fseeko exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_03f8c/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_03f8c.dir\build.make CMakeFiles/cmTC_03f8c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03f8c.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_03f8c.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: error: 'fseeko' undeclared (first use in this function)
+   return ((int*)(&fseeko))[argc];
+                   ^~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_03f8c.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_03f8c.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_03f8c.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_03f8c/fast' failed
+mingw32-make.exe: *** [cmTC_03f8c/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fseeko
+  return ((int*)(&fseeko))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sigaction exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_cd811/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cd811.dir\build.make CMakeFiles/cmTC_cd811.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd811.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_cd811.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: 'sigaction' undeclared (first use in this function)
+   return ((int*)(&sigaction))[argc];
+                   ^~~~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_cd811.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_cd811.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_cd811.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cd811/fast' failed
+mingw32-make.exe: *** [cmTC_cd811/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sigaction
+  return ((int*)(&sigaction))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysconf exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_452b0/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_452b0.dir\build.make CMakeFiles/cmTC_452b0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_452b0.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_452b0.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: 'sysconf' undeclared (first use in this function)
+   return ((int*)(&sysconf))[argc];
+                   ^~~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_452b0.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_452b0.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_452b0.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_452b0/fast' failed
+mingw32-make.exe: *** [cmTC_452b0/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysconf
+  return ((int*)(&sysconf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctlbyname exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_337b5/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_337b5.dir\build.make CMakeFiles/cmTC_337b5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_337b5.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_337b5.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:24: fatal error: sys/sysctl.h: No such file or directory
+ #include <sys/sysctl.h>
+                        ^
+compilation terminated.
+CMakeFiles\cmTC_337b5.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_337b5.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_337b5.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_337b5/fast' failed
+mingw32-make.exe: *** [cmTC_337b5/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctlbyname
+  return ((int*)(&sysctlbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getauxval exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_73d11/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_73d11.dir\build.make CMakeFiles/cmTC_73d11.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73d11.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_73d11.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:22: fatal error: sys/auxv.h: No such file or directory
+ #include <sys/auxv.h>
+                      ^
+compilation terminated.
+CMakeFiles\cmTC_73d11.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_73d11.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_73d11.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_73d11/fast' failed
+mingw32-make.exe: *** [cmTC_73d11/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getauxval
+  return ((int*)(&getauxval))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the elf_aux_info exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_ecdb2/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ecdb2.dir\build.make CMakeFiles/cmTC_ecdb2.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ecdb2.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_ecdb2.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:22: fatal error: sys/auxv.h: No such file or directory
+ #include <sys/auxv.h>
+                      ^
+compilation terminated.
+CMakeFiles\cmTC_ecdb2.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_ecdb2.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ecdb2.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ecdb2/fast' failed
+mingw32-make.exe: *** [cmTC_ecdb2/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef elf_aux_info
+  return ((int*)(&elf_aux_info))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the poll exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_7bc06/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7bc06.dir\build.make CMakeFiles/cmTC_7bc06.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7bc06.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_7bc06.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:18: fatal error: poll.h: No such file or directory
+ #include <poll.h>
+                  ^
+compilation terminated.
+CMakeFiles\cmTC_7bc06.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_7bc06.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_7bc06.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7bc06/fast' failed
+mingw32-make.exe: *** [cmTC_7bc06/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <poll.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef poll
+  return ((int*)(&poll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6208d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6208d.dir\build.make CMakeFiles/cmTC_6208d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6208d.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_6208d.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_6208d.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6208d.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_6208d.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_6208d.dir/objects.a @CMakeFiles\cmTC_6208d.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open  -D_GNU_SOURCE=1 -Wl,--whole-archive CMakeFiles\cmTC_6208d.dir/objects.a -Wl,--no-whole-archive -o cmTC_6208d.exe -Wl,--out-implib,libcmTC_6208d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6208d.dir\linklibs.rsp
+CMakeFiles\cmTC_6208d.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `iconv_open'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_6208d.dir\build.make:99: recipe for target 'cmTC_6208d.exe' failed
+mingw32-make.exe[1]: *** [cmTC_6208d.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6208d/fast' failed
+mingw32-make.exe: *** [cmTC_6208d/fast] Error 2
+
+
+
+Determining if the function iconv_open exists in the c failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_2e175/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2e175.dir\build.make CMakeFiles/cmTC_2e175.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e175.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_2e175.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_2e175.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2e175.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_2e175.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_2e175.dir/objects.a @CMakeFiles\cmTC_2e175.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open  -D_GNU_SOURCE=1 -Wl,--whole-archive CMakeFiles\cmTC_2e175.dir/objects.a -Wl,--no-whole-archive -o cmTC_2e175.exe -Wl,--out-implib,libcmTC_2e175.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2e175.dir\linklibs.rsp
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -lc
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_2e175.dir\build.make:99: recipe for target 'cmTC_2e175.exe' failed
+mingw32-make.exe[1]: *** [cmTC_2e175.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2e175/fast' failed
+mingw32-make.exe: *** [cmTC_2e175/fast] Error 2
+
+
+
+Determining if the include file alloca.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_adede/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_adede.dir\build.make CMakeFiles/cmTC_adede.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_adede.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_adede.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:20: fatal error: alloca.h: No such file or directory
+ #include <alloca.h>
+                    ^
+compilation terminated.
+CMakeFiles\cmTC_adede.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_adede.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_adede.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_adede/fast' failed
+mingw32-make.exe: *** [cmTC_adede/fast] Error 2
+
+
+
+Determining if the alloca exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_73fa4/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_73fa4.dir\build.make CMakeFiles/cmTC_73fa4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73fa4.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_73fa4.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:20: fatal error: alloca.h: No such file or directory
+ #include <alloca.h>
+                    ^
+compilation terminated.
+CMakeFiles\cmTC_73fa4.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_73fa4.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_73fa4.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_73fa4/fast' failed
+mingw32-make.exe: *** [cmTC_73fa4/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <alloca.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the alloca exist failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_287f1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_287f1.dir\build.make CMakeFiles/cmTC_287f1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_287f1.dir/CheckSymbolExists.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_287f1.dir\CheckSymbolExists.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: 'alloca' undeclared (first use in this function)
+   return ((int*)(&alloca))[argc];
+                   ^~~~~~
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_287f1.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_287f1.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_287f1.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_287f1/fast' failed
+mingw32-make.exe: *** [cmTC_287f1/fast] Error 2
+
+
+File C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_SA_SIGACTION failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_df16d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_df16d.dir\build.make CMakeFiles/cmTC_df16d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_df16d.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_SA_SIGACTION  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_df16d.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c: In function 'main':
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c:6:39: error: dereferencing pointer to incomplete type 'struct sigaction'
+   (void)sizeof(((struct sigaction *)0)->sa_sigaction);
+                                       ^~
+CMakeFiles\cmTC_df16d.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_df16d.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_df16d.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_df16d/fast' failed
+mingw32-make.exe: *** [cmTC_df16d/fast] Error 2
+
+
+Source file was:
+
+#include <signal.h>
+
+int main()
+{
+  (void)sizeof(((struct sigaction *)0)->sa_sigaction);
+  return 0;
+}
+
+Determining if the include file d3d11_1.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a6123/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a6123.dir\build.make CMakeFiles/cmTC_a6123.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6123.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_a6123.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: d3d11_1.h: No such file or directory
+ #include <d3d11_1.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_a6123.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_a6123.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_a6123.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a6123/fast' failed
+mingw32-make.exe: *** [cmTC_a6123/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_D3D12_H failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_74fdc/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_74fdc.dir\build.make CMakeFiles/cmTC_74fdc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74fdc.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_D3D12_H  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_74fdc.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c:2:29: fatal error: winsdkver.h: No such file or directory
+       #include <winsdkver.h>
+                             ^
+compilation terminated.
+CMakeFiles\cmTC_74fdc.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_74fdc.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_74fdc.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_74fdc/fast' failed
+mingw32-make.exe: *** [cmTC_74fdc/fast] Error 2
+
+
+Source file was:
+
+      #include <winsdkver.h>
+      #include <sdkddkver.h>
+      #include <d3d12.h>
+      ID3D12Device1 *device;
+      #if WDK_NTDDI_VERSION > 0x0A000008
+      int main(int argc, char **argv) { return 0; }
+      #endif
+Determining if the include file ddraw.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_85fb3/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_85fb3.dir\build.make CMakeFiles/cmTC_85fb3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85fb3.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_85fb3.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:19: fatal error: ddraw.h: No such file or directory
+ #include <ddraw.h>
+                   ^
+compilation terminated.
+CMakeFiles\cmTC_85fb3.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_85fb3.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_85fb3.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_85fb3/fast' failed
+mingw32-make.exe: *** [cmTC_85fb3/fast] Error 2
+
+
+
+Determining if the include file dsound.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d233d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d233d.dir\build.make CMakeFiles/cmTC_d233d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d233d.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_d233d.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:20: fatal error: dsound.h: No such file or directory
+ #include <dsound.h>
+                    ^
+compilation terminated.
+CMakeFiles\cmTC_d233d.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_d233d.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_d233d.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d233d/fast' failed
+mingw32-make.exe: *** [cmTC_d233d/fast] Error 2
+
+
+
+Determining if the include file dinput.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_7db4f/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7db4f.dir\build.make CMakeFiles/cmTC_7db4f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7db4f.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_7db4f.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:20: fatal error: dinput.h: No such file or directory
+ #include <dinput.h>
+                    ^
+compilation terminated.
+CMakeFiles\cmTC_7db4f.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_7db4f.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_7db4f.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7db4f/fast' failed
+mingw32-make.exe: *** [cmTC_7db4f/fast] Error 2
+
+
+
+Determining if the include file dxgi.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b4d39/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b4d39.dir\build.make CMakeFiles/cmTC_b4d39.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4d39.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_b4d39.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:18: fatal error: dxgi.h: No such file or directory
+ #include <dxgi.h>
+                  ^
+compilation terminated.
+CMakeFiles\cmTC_b4d39.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_b4d39.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b4d39.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b4d39/fast' failed
+mingw32-make.exe: *** [cmTC_b4d39/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_XINPUT_H failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_dffd4/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_dffd4.dir\build.make CMakeFiles/cmTC_dffd4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dffd4.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_XINPUT_H  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_dffd4.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c:3:26: fatal error: xinput.h: No such file or directory
+       #include <xinput.h>
+                          ^
+compilation terminated.
+CMakeFiles\cmTC_dffd4.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_dffd4.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_dffd4.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dffd4/fast' failed
+mingw32-make.exe: *** [cmTC_dffd4/fast] Error 2
+
+
+Source file was:
+
+      #include <windows.h>
+      #include <xinput.h>
+      int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_XINPUT_GAMEPAD_EX failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f726d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f726d.dir\build.make CMakeFiles/cmTC_f726d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f726d.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_XINPUT_GAMEPAD_EX  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_f726d.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c:3:26: fatal error: xinput.h: No such file or directory
+       #include <xinput.h>
+                          ^
+compilation terminated.
+CMakeFiles\cmTC_f726d.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_f726d.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_f726d.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f726d/fast' failed
+mingw32-make.exe: *** [cmTC_f726d/fast] Error 2
+
+
+Source file was:
+
+      #include <windows.h>
+      #include <xinput.h>
+      XINPUT_GAMEPAD_EX x1;
+      int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_XINPUT_STATE_EX failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5396f/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5396f.dir\build.make CMakeFiles/cmTC_5396f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5396f.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_XINPUT_STATE_EX  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_5396f.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c:3:26: fatal error: xinput.h: No such file or directory
+       #include <xinput.h>
+                          ^
+compilation terminated.
+CMakeFiles\cmTC_5396f.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_5396f.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_5396f.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5396f/fast' failed
+mingw32-make.exe: *** [cmTC_5396f/fast] Error 2
+
+
+Source file was:
+
+      #include <windows.h>
+      #include <xinput.h>
+      XINPUT_STATE_EX s1;
+      int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_WINDOWS_GAMING_INPUT_H failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_35586/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_35586.dir\build.make CMakeFiles/cmTC_35586.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35586.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DHAVE_WINDOWS_GAMING_INPUT_H  -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_35586.dir\src.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\src.c:3:40: fatal error: windows.gaming.input.h: No such file or directory
+       #include <windows.gaming.input.h>
+                                        ^
+compilation terminated.
+CMakeFiles\cmTC_35586.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_35586.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_35586.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_35586/fast' failed
+mingw32-make.exe: *** [cmTC_35586/fast] Error 2
+
+
+Source file was:
+
+      #define COBJMACROS
+      #include <windows.gaming.input.h>
+      __x_ABI_CWindows_CGaming_CInput_CIGamepadStatics2 *s2;
+      int main(int argc, char **argv) { return 0; }
+Determining if the include file tpcshrd.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_218dd/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_218dd.dir\build.make CMakeFiles/cmTC_218dd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_218dd.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_218dd.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: tpcshrd.h: No such file or directory
+ #include <tpcshrd.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_218dd.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_218dd.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_218dd.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_218dd/fast' failed
+mingw32-make.exe: *** [cmTC_218dd/fast] Error 2
+
+
+
+Determining if the include file roapi.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_e409b/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e409b.dir\build.make CMakeFiles/cmTC_e409b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e409b.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_e409b.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:19: fatal error: roapi.h: No such file or directory
+ #include <roapi.h>
+                   ^
+compilation terminated.
+CMakeFiles\cmTC_e409b.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_e409b.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_e409b.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e409b/fast' failed
+mingw32-make.exe: *** [cmTC_e409b/fast] Error 2
+
+
+
+Determining if the include file mmdeviceapi.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f1609/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f1609.dir\build.make CMakeFiles/cmTC_f1609.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1609.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_f1609.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:25: fatal error: mmdeviceapi.h: No such file or directory
+ #include <mmdeviceapi.h>
+                         ^
+compilation terminated.
+CMakeFiles\cmTC_f1609.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_f1609.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_f1609.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f1609/fast' failed
+mingw32-make.exe: *** [cmTC_f1609/fast] Error 2
+
+
+
+Determining if the include file audioclient.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_1c6a0/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1c6a0.dir\build.make CMakeFiles/cmTC_1c6a0.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c6a0.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_1c6a0.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:25: fatal error: audioclient.h: No such file or directory
+ #include <audioclient.h>
+                         ^
+compilation terminated.
+CMakeFiles\cmTC_1c6a0.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_1c6a0.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_1c6a0.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1c6a0/fast' failed
+mingw32-make.exe: *** [cmTC_1c6a0/fast] Error 2
+
+
+
+Determining if the include file sensorsapi.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_14be1/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_14be1.dir\build.make CMakeFiles/cmTC_14be1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14be1.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_14be1.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:24: fatal error: sensorsapi.h: No such file or directory
+ #include <sensorsapi.h>
+                        ^
+compilation terminated.
+CMakeFiles\cmTC_14be1.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_14be1.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_14be1.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_14be1/fast' failed
+mingw32-make.exe: *** [cmTC_14be1/fast] Error 2
+
+
+
+Determining if the include file shellscalingapi.h exists failed with the following output:
+Change Dir: C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5d1fb/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5d1fb.dir\build.make CMakeFiles/cmTC_5d1fb.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5d1fb.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-src/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles\cmTC_5d1fb.dir\CheckIncludeFile.c.obj -c C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\nocet\OneDrive\Documents\Projects\C++\carp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:29: fatal error: shellscalingapi.h: No such file or directory
+ #include <shellscalingapi.h>
+                             ^
+compilation terminated.
+CMakeFiles\cmTC_5d1fb.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_5d1fb.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_5d1fb.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5d1fb/fast' failed
+mingw32-make.exe: *** [cmTC_5d1fb/fast] Error 2
+
+
+

@@ -1,0 +1,11 @@
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/carp.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/edit_cache.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/CMakeFiles/rebuild_cache.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-build/CMakeFiles/sdl_headers_copy.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-build/CMakeFiles/SDL2main.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-build/CMakeFiles/SDL2.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-build/CMakeFiles/SDL2-static.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-build/CMakeFiles/SDL2_test.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-build/CMakeFiles/uninstall.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-build/CMakeFiles/edit_cache.dir
+C:/Users/nocet/OneDrive/Documents/Projects/C++/carp/build/_deps/sdl2-build/CMakeFiles/rebuild_cache.dir
