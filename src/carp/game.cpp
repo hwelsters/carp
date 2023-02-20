@@ -1,6 +1,9 @@
+#include <iostream>
+
 #include "carp/game.h"
 #include "carp/graphics.h"
 #include "carp/input.h"
+#include "carp/globals.h"
 
 Game::Game()
 {

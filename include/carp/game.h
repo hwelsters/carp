@@ -1,3 +1,4 @@
+#pragma once
 #ifndef GAME_H
 #define GAME_H
 
@@ -12,11 +13,12 @@ public:
     Game();
     ~Game();
 
-    static Game& instance()
+    static Game &instance()
     {
         static Game *instance = new Game();
         return *instance;
     }
+
 private:
     void start();
     void processInput();

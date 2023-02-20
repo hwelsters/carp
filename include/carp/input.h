@@ -1,3 +1,4 @@
+#pragma once
 #ifndef INPUT_H
 #define INPUT_H
 
@@ -19,7 +20,8 @@ public:
     bool isKeyPressed(CARP_KEY);
     bool isKeyReleased(CARP_KEY);
     bool isKeyHeld(CARP_KEY);
-private:    
+
+private:
     void quitEvent();
     void keyUpEvent(SDL_Scancode);
     void keyDownEvent(SDL_Scancode);
@@ -31,8 +33,6 @@ private:
     std::unordered_map<SDL_Scancode, bool> released_keys;
 
     bool windowShouldClose;
-
-
 };
 
 #endif

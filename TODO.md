@@ -21,6 +21,7 @@ scenes - have - entities
 entities - have - components
 entities - have - update, processInput, render
 components - have - update, render, they shouldn't take input. Things like sprites, etc
+all SDL details should be abstracted away from the programmer
 
 🌕 Moonshot goals:
 Programming language for programming games with carp
