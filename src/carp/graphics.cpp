@@ -30,7 +30,6 @@ void Graphics::clear()
 
 void Graphics::flip()
 {
-    printf("FLIP!\n");
     SDL_RenderPresent(this->renderer.get());
 }
 
@@ -47,21 +46,17 @@ void Graphics::blitSurface(SDL_Texture *texture, SDL_Rect source_rect, SDL_Rect 
 
 SDL_Texture *Graphics::loadTexture(std::string path)
 {
-    printf("LOADING TEXTURE...\n");
     if (this->sprite_sheets.count(path) != 0) { return this->sprite_sheets[path]; }
 
     SDL_Texture *newTexture = NULL;
     SDL_Surface *loadedSurface = IMG_Load((GLOBALS::BASE_IMAGE_FILE_PATH + path).c_str());
 
-    printf("%s\n", (GLOBALS::BASE_IMAGE_FILE_PATH + path).c_str());
-    printf("Loaded png...\n");
     if (loadedSurface == nullptr) printf("Failed to load surface %s! SDL_image error: %s\n", path.c_str(), IMG_GetError());
 
     newTexture = SDL_CreateTextureFromSurface(this->renderer.get(), loadedSurface);
-    this->sprite_sheets[path] = newTexture;
-
     SDL_FreeSurface(loadedSurface);
 
-    printf("SUCCESFULLY LOADED TEXTURE!\n");
+    this->sprite_sheets[path] = newTexture;
+
     return this->sprite_sheets[path];
 }

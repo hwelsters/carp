@@ -6,8 +6,6 @@ Sprite::Sprite(std::shared_ptr<Entity> owner, std::string sprite_file_path, Vect
     this->texture = Graphics::instance().loadTexture(sprite_file_path);
     this->source_position = source_position;
     this->source_size = source_size;
-
-    printf("SPRITE CREATED!\n");
 }
 
 Sprite::~Sprite() {}
@@ -16,8 +14,6 @@ void Sprite::update() {}
 
 void Sprite::render()
 {
-    printf("RENDERING...\n");
-
     SDL_Rect source_rect = {
         static_cast<int>(this->source_position.x),
         static_cast<int>(this->source_position.y),
