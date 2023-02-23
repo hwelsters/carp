@@ -4,8 +4,6 @@
 
 #include <vector>
 
-class Graphics;
-class Input;
 class Scene;
 
 class Game
@@ -28,8 +26,6 @@ private:
 
     void gameLoop();
 
-    Graphics *graphics;
-    Input *input;
     Scene* active_scene;
 };
 

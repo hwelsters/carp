@@ -10,23 +10,18 @@ Game::Game()
 {
     // TESTING
     this->active_scene = new Scene();
-
-    this->graphics = new Graphics();
-    this->input = new Input();
     this->gameLoop();
 }
 
 Game::~Game() 
 {
-    delete this->graphics;
-    delete this->input;
 }
 
 void Game::start() {}
 
 void Game::processInput() 
 {
-    this->input->processInput();
+    Input::instance().processInput();
 }
 
 void Game::update()
@@ -36,13 +31,14 @@ void Game::update()
 
 void Game::render() 
 {
-    this->graphics->render();
+    this->active_scene->render();
+    Graphics::instance().render();
 }
 
 void Game::gameLoop()
 {
     this->start();
-    while (!this->input->getWindowShouldClose())
+    while (!Input::instance().getWindowShouldClose())
     {
         this->processInput();
         this->update();

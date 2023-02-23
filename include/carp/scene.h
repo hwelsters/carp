@@ -15,7 +15,7 @@ public:
     void update();
     void render();
 private:
-    std::vector<std::shared_ptr<Entity>> entity_list;
+    std::vector<Entity*> entity_list;
 };
 
 #endif

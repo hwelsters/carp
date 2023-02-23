@@ -17,7 +17,7 @@ public:
     
     void update();
     void render();
-    
+
     Vector3 get_position();
     Vector3 get_scale();
 
@@ -25,7 +25,7 @@ protected:
 
     void addComponent(Component*);
 
-    std::vector<std::unique_ptr<Component>> component_list;
+    std::vector<Component*> component_list;
     Vector3 position;
     Vector3 scale;
 };

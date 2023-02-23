@@ -14,6 +14,11 @@ class Input
 public:
     Input();
     ~Input();
+    static Input& instance()
+    {
+        static Input* instance = new Input();
+        return *instance;
+    }
 
     void processInput();
     bool getWindowShouldClose();

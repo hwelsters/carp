@@ -12,7 +12,7 @@ namespace GLOBALS
     static const int SCREEN_WIDTH = 640;
     static const int SCREEN_HEIGHT = 480;
     static const int FRAMES_PER_SECOND = 60;
-    static const int SPRITE_SCALE = 2;
+    static const int SPRITE_SCALE = 1;
     static const std::string WINDOW_TITLE = "epic thing";
     static const std::string BASE_IMAGE_FILE_PATH = "assets/images/";
     static const SDL_Color BACKGROUND_COLOR = {200, 255, 160, 255};
