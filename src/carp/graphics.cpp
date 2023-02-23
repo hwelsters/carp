@@ -16,12 +16,6 @@ Graphics::~Graphics()
     this->renderer = NULL;
 }
 
-void Graphics::render()
-{
-    // this->clear();
-    this->flip();
-}
-
 void Graphics::clear()
 {
     SDL_SetRenderDrawColor(this->renderer.get(), GLOBALS::BACKGROUND_COLOR.r, GLOBALS::BACKGROUND_COLOR.g, GLOBALS::BACKGROUND_COLOR.b, GLOBALS::BACKGROUND_COLOR.a);

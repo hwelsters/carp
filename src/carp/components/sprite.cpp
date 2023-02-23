@@ -21,9 +21,9 @@ void Sprite::render()
         static_cast<int>(this->source_size.y)};
 
     SDL_Rect destination_rect = {
-        static_cast<int>(this->source_position.x), 
-        static_cast<int>(this->source_position.y), 
         static_cast<int>(this->owner->get_position().x), 
-        static_cast<int>(this->owner->get_position().y)};
+        static_cast<int>(this->owner->get_position().y),
+        static_cast<int>(this->source_size.x),
+        static_cast<int>(this->source_size.y)};
     Graphics::instance().blitSurface(this->texture, source_rect, destination_rect);
 }

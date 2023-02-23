@@ -11,11 +11,12 @@ namespace GLOBALS
 {
     static const int SCREEN_WIDTH = 640;
     static const int SCREEN_HEIGHT = 480;
-    static const int FRAMES_PER_SECOND = 60;
-    static const int SPRITE_SCALE = 1;
+    static const int MAX_FRAMES_PER_SECOND = 60;
+    static const int SCREEN_TICKS_PER_FRAME = 1000 / MAX_FRAMES_PER_SECOND;
+    static const int SPRITE_SCALE = 3;
     static const std::string WINDOW_TITLE = "epic thing";
     static const std::string BASE_IMAGE_FILE_PATH = "assets/images/";
-    static const SDL_Color BACKGROUND_COLOR = {200, 255, 160, 255};
+    static const SDL_Color BACKGROUND_COLOR = {31, 16, 42, 255};
 }
 
 enum CARP_KEY : unsigned int

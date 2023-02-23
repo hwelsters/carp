@@ -6,7 +6,7 @@
 
 Scene::Scene()
 {
-    this->entity_list.push_back(new Player(Vector3(100, 100, 0), Vector3(0, 0, 0)));
+    this->entity_list.push_back(new Player(Vector3(10, 10, 0), Vector3(0, 0, 0)));
 }
 
 Scene::~Scene() {}
