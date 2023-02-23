@@ -4,7 +4,7 @@
 
 Sprite::Sprite() {}
 
-Sprite(std::string sprite_file_path, SDL_Rect *source_rect, Vector pivot_position)
+Sprite(std::shared_ptr<Entity> owner, std::string sprite_file_path, SDL_Rect *source_rect, Vector pivot_position) : Component(owner)
 {
     this->texture = SpriteManager::instance().loadTexture();
     this->source_rect = source_rect;
@@ -13,12 +13,10 @@ Sprite(std::string sprite_file_path, SDL_Rect *source_rect, Vector pivot_positio
 
 Sprite::~Sprite() {}
 
-void Sprite::update() 
-{
-}
+void Sprite::update() {}
 
-void Sprite::render() 
+void Sprite::render()
 {
-    SDL_Rect destination_rect = {this->en}
+    SDL_Rect destination_rect = {this->owner->position.x, this->owner->position.y, this->source_rect.w, this->source_rect.h};
     Graphics::instance().blitSurface(this->texture, this->source_rect)
 }

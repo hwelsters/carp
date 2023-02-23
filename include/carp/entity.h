@@ -16,6 +16,8 @@ public:
     
     void update();
     void render();
+
+    friend Component;
 private:
     void addComponent(Component*);
 

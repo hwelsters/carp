@@ -17,14 +17,13 @@ public:
         static Graphics* instance = new Graphics();
         return *instance;
     }
-
+    
+    void blitSurface(SDL_Texture* texture, SDL_Rect source_rect, SDL_Rect destination_rect);
     void render();
 
-    friend Sprite;
 private:
     void clear();
     void flip();
-    void blitSurface(SDL_Texture* texture, SDL_Rect source_rect, SDL_Rect destination_rect);
     
     std::unique_ptr<SDL_Window, decltype(&SDL_DestroyWindow)> window;
     std::unique_ptr<SDL_Renderer, decltype(&SDL_DestroyRenderer)> renderer;
