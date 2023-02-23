@@ -2,6 +2,8 @@
 #ifndef GLOBALS_H
 #define GLOBALS_H
 
+#include <SDL.h>
+
 #include <iostream>
 
 namespace GLOBALS
@@ -9,7 +11,9 @@ namespace GLOBALS
     static const int SCREEN_WIDTH = 640;
     static const int SCREEN_HEIGHT = 480;
     static const int FRAMES_PER_SECOND = 60;
+    static const int SPRITE_SCALE = 2;
     static const char *WINDOW_TITLE = "epic thing";
+    static const SDL_Color BACKGROUND_COLOR = {200, 255, 160, 255};
 }
 
 enum CARP_KEY : unsigned int
