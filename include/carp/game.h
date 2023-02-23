@@ -6,6 +6,7 @@
 
 class Graphics;
 class Input;
+class Scene;
 
 class Game
 {
@@ -29,6 +30,7 @@ private:
 
     Graphics *graphics;
     Input *input;
+    Scene* active_scene;
 };
 
 #endif

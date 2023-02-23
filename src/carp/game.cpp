@@ -4,9 +4,13 @@
 #include "carp/graphics.h"
 #include "carp/input.h"
 #include "carp/globals.h"
+#include "carp/scene.h"
 
 Game::Game()
 {
+    // TESTING
+    this->active_scene = new Scene();
+
     this->graphics = new Graphics();
     this->input = new Input();
     this->gameLoop();
@@ -27,6 +31,7 @@ void Game::processInput()
 
 void Game::update()
 {
+    this->active_scene->update();
 }
 
 void Game::render() 

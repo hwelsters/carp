@@ -5,6 +5,7 @@
 #include <SDL.h>
 
 #include <iostream>
+#include <string>
 
 namespace GLOBALS
 {
@@ -12,7 +13,8 @@ namespace GLOBALS
     static const int SCREEN_HEIGHT = 480;
     static const int FRAMES_PER_SECOND = 60;
     static const int SPRITE_SCALE = 2;
-    static const char *WINDOW_TITLE = "epic thing";
+    static const std::string WINDOW_TITLE = "epic thing";
+    static const std::string BASE_IMAGE_FILE_PATH = "assets/images/";
     static const SDL_Color BACKGROUND_COLOR = {200, 255, 160, 255};
 }
 
@@ -41,7 +43,11 @@ struct Vector3
     // Operator overloading
     Vector3 operator+(Vector3 const &vector3) { return Vector3(this->x + vector3.x, this->y + vector3.y, this->z + vector3.z); }
     Vector3 operator-(Vector3 const &vector3) { return Vector3(this->x - vector3.x, this->y - vector3.y, this->z - vector3.z); }
-    friend std::ostream &operator<<(std::ostream &os, const Vector3 &vector3) { os << "Vector3 :: " << vector3.x << " :: " << vector3.y << " :: " << vector3.z << "\n"; }
+    friend std::ostream &operator<<(std::ostream &os, const Vector3 &vector3)
+    {
+        os << "Vector3 :: " << vector3.x << " :: " << vector3.y << " :: " << vector3.z << "\n";
+        return os;
+    }
 };
 
 #endif

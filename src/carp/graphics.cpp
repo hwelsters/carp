@@ -1,10 +1,12 @@
+#include <SDL_image.h>
+
 #include "carp/graphics.h"
 #include "carp/globals.h"
 
 Graphics::Graphics() : window(nullptr, SDL_DestroyWindow),
                        renderer(nullptr, SDL_DestroyRenderer)
 {
-    this->window.reset(SDL_CreateWindow(GLOBALS::WINDOW_TITLE, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, GLOBALS::SCREEN_WIDTH, GLOBALS::SCREEN_HEIGHT, 0));
+    this->window.reset(SDL_CreateWindow(GLOBALS::WINDOW_TITLE.c_str(), SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, GLOBALS::SCREEN_WIDTH, GLOBALS::SCREEN_HEIGHT, 0));
     this->renderer.reset(SDL_CreateRenderer(this->window.get(), 0, 0));
 }
 
@@ -39,5 +41,22 @@ void Graphics::blitSurface(SDL_Texture *texture, SDL_Rect source_rect, SDL_Rect 
         destination_rect.w * GLOBALS::SPRITE_SCALE,
         destination_rect.h * GLOBALS::SPRITE_SCALE};
 
-    SDL_RenderCopy(this->renderer.get(), texture, &source_rect, &destination_rect);
+    SDL_RenderCopy(this->renderer.get(), texture, &source_rect, &scaledRect);
+}
+
+SDL_Texture *Graphics::loadTexture(std::string path)
+{
+    if (this->sprite_sheets.count(path) == 0)
+    {
+        return this->sprite_sheets[path];
+    }
+
+    SDL_Texture *newTexture = NULL;
+    SDL_Surface *loadedSurface = IMG_Load((GLOBALS::BASE_IMAGE_FILE_PATH + path).c_str());
+    if (loadedSurface == NULL) printf("Failed to load surface %s! SDL_image error: %s\n", path.c_str(), IMG_GetError());
+    newTexture = SDL_CreateTextureFromSurface(this->renderer.get(), loadedSurface);
+    this->sprite_sheets[path] = newTexture;
+    SDL_FreeSurface(loadedSurface);
+
+    return newTexture;
 }

@@ -7,21 +7,19 @@
 #include "carp/globals.h"
 #include "carp/entity.h"
 
-struct SDL_Rect;
-
 class Sprite : public Component
 {
 public:
-    Sprite();
-    Sprite(std::shared_ptr<Entity> owner, std::string sprite_file_path, SDL_Rect* source_rect, Vector pivot_position);
+    Sprite(std::shared_ptr<Entity> owner, std::string sprite_file_path, Vector3 source_position, Vector3 source_size);
     ~Sprite();
 private:
-    void update();
-    void render();
+    void update() override;
+    void render() override;
     
-    SDL_Rect* source_rect;
     SDL_Texture* texture;
-    Vector2 pivot_position;
+
+    Vector3 source_position;
+    Vector3 source_size;
 };
 
 #endif

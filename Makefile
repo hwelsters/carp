@@ -1,6 +1,6 @@
 SRC_DIR = src
 INCLUDE_DIR = ./include
-SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(SRC_DIR)/carp/*.cpp)
+SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(SRC_DIR)/carp/*.cpp) $(wildcard $(SRC_DIR)/carp/components/*.cpp)
 
 #OBJS specifies which files to compile as part of the project
 OBJS = 	$(SRC_FILES)
@@ -16,7 +16,8 @@ LIBRARY_PATHS = -LC:\mingw_dev_lib\lib
 #COMPILER_FLAGS specifies the additional compilation options we're using
 # -w suppresses all warnings
 # -Wl,-subsystem,windows gets rid of the console window
-COMPILER_FLAGS = -g -w
+# COMPILER_FLAGS = -g -w
+COMPILER_FLAGS = -Wall
 
 #LINKER_FLAGS specifies the libraries we're linking against
 LINKER_FLAGS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
