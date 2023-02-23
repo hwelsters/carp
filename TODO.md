@@ -19,6 +19,7 @@ UI Editor
 [✅] Component
 [✅] Sprite
 [✅] Frame-rate capping
+[❌] Animations
 [❌] Camera
 [❌] Audio
 [❌] Tilemaps
