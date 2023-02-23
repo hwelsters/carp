@@ -11,6 +11,7 @@ all SDL details should be abstracted away from the programmer
 
 🌕 Moonshot goals:
 DSL for programming games with carp
+UI Editor
 
 [✅] Input
 [✅] Graphics
