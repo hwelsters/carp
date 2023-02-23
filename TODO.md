@@ -13,10 +13,10 @@ all SDL details should be abstracted away from the programmer
 DSL for programming games with carp
 
 [✅] Input
-[❌] Graphics
+[✅] Graphics
 [✅] Entity
 [✅] Component
-[❌] Sprite
+[✅] Sprite
 [❌] Audio
 [❌] Tilemaps
 [❌] Scenes
