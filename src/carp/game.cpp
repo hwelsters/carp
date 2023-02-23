@@ -12,7 +12,11 @@ Game::Game()
     this->gameLoop();
 }
 
-Game::~Game() {}
+Game::~Game() 
+{
+    delete this->graphics;
+    delete this->input;
+}
 
 void Game::start() {}
 
@@ -25,7 +29,10 @@ void Game::update()
 {
 }
 
-void Game::render() {}
+void Game::render() 
+{
+    this->graphics->render();
+}
 
 void Game::gameLoop()
 {

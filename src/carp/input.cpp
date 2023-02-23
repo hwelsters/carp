@@ -4,7 +4,7 @@
 
 Input::Input()
 {
-    this->event = new SDL_Event();
+    this->event.reset(new SDL_Event());
     this->windowShouldClose = false;
 }
 
@@ -15,7 +15,7 @@ void Input::processInput()
     this->pressed_keys.clear();
     this->released_keys.clear();
 
-    while (SDL_PollEvent(this->event))
+    while (SDL_PollEvent(this->event.get()))
     {
         switch (this->event->type)
         {

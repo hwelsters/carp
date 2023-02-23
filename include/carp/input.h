@@ -4,6 +4,7 @@
 
 #include <SDL.h>
 
+#include <memory>
 #include <unordered_map>
 
 enum CARP_KEY : unsigned int;
@@ -26,7 +27,7 @@ private:
     void keyUpEvent(SDL_Scancode);
     void keyDownEvent(SDL_Scancode);
 
-    SDL_Event *event;
+    std::unique_ptr<SDL_Event> event;
 
     std::unordered_map<SDL_Scancode, bool> pressed_keys;
     std::unordered_map<SDL_Scancode, bool> held_keys;

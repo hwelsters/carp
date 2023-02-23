@@ -7,12 +7,14 @@ class Entity;
 class Component
 {
 public:
-    Component(Entity*);
+    Component(std::shared_ptr<Entity> owner);
     ~Component();
 
     virtual void update() = 0;
     virtual void render() = 0;
-private:
+
+protected:
+    std::shared_ptr<Entity> owner;
 };
 
 #endif

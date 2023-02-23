@@ -2,6 +2,7 @@
 #ifndef SCENE_H
 #define SCENE_H
 
+#include <memory>
 #include <vector>
 
 class Entity;
@@ -14,7 +15,7 @@ public:
     void update();
     void render();
 private:
-    std::vector<Entity*> entity_list;
+    std::vector<std::shared_ptr<Entity>> entity_list;
 };
 
 #endif
