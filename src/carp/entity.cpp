@@ -2,12 +2,10 @@
 
 Entity::Entity() {}
 
-Entity::~Entity()
-{
-    for (Component *component : this->component_list)
-        delete component;
+Entity::~Entity() {}
 
-    this->component_list.clear();
-}
+void Entity::addComponent(Component *component) { this->component_list.push_back(std::unique_ptr<Component>(component)); }
 
-void Entity::addComponent(Component *component) { this->component_list.push_back(component); }
+void Entity::update() {}
+
+void Entity::render() {}

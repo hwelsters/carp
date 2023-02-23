@@ -3,9 +3,10 @@
 #define ENTITY_H
 
 #include <vector>
+#include <memory>
 
-class Component;
-struct Vector3;
+#include "carp/globals.h"
+#include "carp/component.h"
 
 class Entity
 {
@@ -13,13 +14,13 @@ public:
     Entity();
     ~Entity();
     
-    virtual void update() = 0;
-    virtual void render() = 0;
+    void update();
+    void render();
 private:
     void addComponent(Component*);
 
-    std::vector<Component*> component_list;
-    Vector3* position;
+    std::vector<std::unique_ptr<Component>> component_list;
+    Vector3 position;
 };
 
 #endif
