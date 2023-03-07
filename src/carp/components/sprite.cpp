@@ -1,6 +1,7 @@
 #include "carp/components/sprite.h"
 #include "carp/graphics.h"
 
+Sprite::Sprite() {}
 Sprite::Sprite(std::shared_ptr<Entity> owner, std::string sprite_file_path, Vector3 source_position, Vector3 source_size) : Component(owner)
 {
     this->texture = Graphics::instance().loadTexture(sprite_file_path);
@@ -21,8 +22,8 @@ void Sprite::render()
         static_cast<int>(this->source_size.y)};
 
     SDL_Rect destination_rect = {
-        static_cast<int>(this->owner->get_position().x), 
-        static_cast<int>(this->owner->get_position().y),
+        static_cast<int>(this->owner->getPosition().x), 
+        static_cast<int>(this->owner->getPosition().y),
         static_cast<int>(this->source_size.x),
         static_cast<int>(this->source_size.y)};
     Graphics::instance().blitSurface(this->texture, source_rect, destination_rect);

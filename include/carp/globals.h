@@ -32,6 +32,11 @@ enum CARP_KEY : unsigned int
     CARP_RIGHT = SDL_SCANCODE_RIGHT,
 };
 
+enum COMPONENT_TYPES : unsigned int
+{
+    SPRITE
+};
+
 struct Vector3
 {
     float x;

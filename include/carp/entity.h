@@ -18,16 +18,19 @@ public:
     void update();
     void render();
 
-    Vector3 get_position();
-    Vector3 get_scale();
+    Vector3 getPosition();
+    Vector3 getScale();
 
 protected:
-
+    std::shared_ptr<Component> getComponent(COMPONENT_TYPES component_type);
     void addComponent(Component*);
 
-    std::vector<Component*> component_list;
+    std::vector<std::shared_ptr<Component>> component_list;
     Vector3 position;
     Vector3 scale;
+private:
+    template<typename T1, typename T2>
+    bool compareTypes(T1, T2);
 };
 
 #endif
